@@ -57,7 +57,7 @@ const timerElements = {
 let countdownInterval;
 
 function startTimer() {
-  const endDate = flatpickr.parseDate(input.value);
+  const endDate = new Date(input.value);
   const now = new Date();
   const timeDifference = endDate - now;
 
